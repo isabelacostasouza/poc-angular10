@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<div id='body'>
+  <h4>Select search category</h4>
+  <mat-form-field appearance="fill">
+    <mat-label>Search Category</mat-label>
+    <mat-select>
+      <a *ngFor="let searchCategory of searchCategories" (click)="changeCategory(searchCategory.link)">
+        <mat-option [value]="searchCategory.value">
+          {{searchCategory.value}}
+        </mat-option>
+      </a>
+    </mat-select>
+  </mat-form-field>
+
+  <router-outlet></router-outlet>
+</div>
+
+<app-footer></app-footer>

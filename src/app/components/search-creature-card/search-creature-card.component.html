@@ -1,0 +1,15 @@
+<div id='searchField'>
+  <input type='text' (keyup)="cardName = $event.target.value" placeholder="Ex. Cub">
+  <button (click)='searchCard()'>Pesquisar</button>
+</div>
+
+<mat-spinner *ngIf="loading" id='loadingGif'></mat-spinner>
+
+<div id='cards'>
+  <div class='card' cols="2" *ngFor='let card of cards'>
+    <img src='{{ card.imageUrl }}'>
+    <p>{{ card.name | uppercase}}</p>
+    <p class='cmc'>CMC: {{ card.cmc | number }}</p>
+    <br>
+  </div>
+</div>

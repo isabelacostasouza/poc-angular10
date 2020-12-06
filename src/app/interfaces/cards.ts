@@ -1,0 +1,31 @@
+export interface ICards {
+  name: string;
+  manaCost: string;
+  cmc: number;
+  colors: Array<string>;
+  colorIdentity: Array<string>;
+  type: string;
+  supertypes: Array<string>;
+  types: Array<string>;
+  subtypes: Array<string>;
+  rarity: string;
+  set: string;
+  setName: string;
+  text: string;
+  flavor: string;
+  artist: string;
+  number: string;
+  power: string;
+  toughness: string;
+  layout: string;
+  multiverseid: number;
+  imageUrl: string;
+  watermark: string;
+  rulings: Array<object>;
+  foreignNames: Array<object>;
+  printings: Array<object>;
+  originalText: string;
+  originalType: string;
+  legalities: Array<object>;
+  id: string;
+}

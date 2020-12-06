@@ -1,0 +1,39 @@
+#searchField {
+  margin-top: 40px;
+  float: right;
+  width: 60%;
+  margin-top: 10px;
+
+  input {
+    font-size: 130%;
+    padding: 1%;
+  }
+
+  button {
+    padding: 1.1%;
+    font-size: 120%;
+  }
+}
+
+#loadingGif {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+#cards {
+  margin-top: 20px;
+
+  .card {
+    width: 33%;
+    display: inline-block;
+
+    img {
+      width: 223px;
+      height: 310px;
+    }
+
+    .cmc {
+      margin-top: -15px;
+    }
+  }
+}
